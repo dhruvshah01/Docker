@@ -1,0 +1,28 @@
+Pull any Docker image: docker pull "docker_image"
+
+View all the docker images: docker images
+
+Run the docker image so that it becomes a container: docker run "docker_image"
+
+View the container: docker ps
+
+View all the previous containers: docker ps -a
+
+Stop a docker container: docker stop "container_id"
+
+Start a particular docker container: docker start "container_id"
+
+Run docker in detached mode: docker run -d "docker_image"
+
+Run and pull a specific version of an image: docker run "docker_image":version_no
+
+Run docker on host's particular port: docker run -p "port_no":"container_port_no" "docker_image"
+
+Run docker with our given name: docker run --name "Our given Name" "docker_image"
+
+Debugging Logs of the container: docker logs "docker_name"(or)"container_id"
+
+Debugging the environment of the container: docker exec -it "container_id"(or)"docker_name" /bin/bash
+
+
+(docker run -d -p6001:6379 --name redis-older redis:6.2)
